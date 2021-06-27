@@ -56,10 +56,6 @@ exports.cities = [
     name: "Budapest",
   },
   {
-    formatted_address: "İstanbul, Turkey",
-    name: "İstanbul",
-  },
-  {
     formatted_address: "Venice, Metropolitan City of Venice, Italy",
     name: "Venice",
   },
@@ -94,10 +90,6 @@ exports.cities = [
   {
     formatted_address: "Hamburg, Germany",
     name: "Hamburg",
-  },
-  {
-    formatted_address: "Kraków, Poland",
-    name: "Kraków",
   },
   {
     formatted_address: "Florence, Metropolitan City of Florence, Italy",
@@ -152,16 +144,8 @@ exports.cities = [
     name: "Kigali",
   },
   {
-    formatted_address: "Dakar, Senegal",
-    name: "Dakar",
-  },
-  {
     formatted_address: "Durban, South Africa",
     name: "Durban",
-  },
-  {
-    formatted_address: "Abidjan, Côte d'Ivoire",
-    name: "Abidjan",
   },
   {
     formatted_address: "Kampala, Uganda",
@@ -232,16 +216,8 @@ exports.cities = [
     name: "Lima",
   },
   {
-    formatted_address: "Bogotá, Bogota, Colombia",
-    name: "Bogotá",
-  },
-  {
     formatted_address: "Quito, Ecuador",
     name: "Quito",
-  },
-  {
-    formatted_address: "São Paulo, State of São Paulo, Brazil",
-    name: "São Paulo",
   },
   {
     formatted_address: "Montevideo, Montevideo Department, Uruguay",
@@ -250,10 +226,6 @@ exports.cities = [
   {
     formatted_address: "La Paz, Bolivia",
     name: "La Paz",
-  },
-  {
-    formatted_address: "Medellín, Medellin, Antioquia, Colombia",
-    name: "Medellín",
   },
   {
     formatted_address: "Cartagena, Cartagena Province, Bolivar, Colombia",
@@ -276,10 +248,6 @@ exports.cities = [
     name: "Salvador",
   },
   {
-    formatted_address: "Asunción, Paraguay",
-    name: "Asunción",
-  },
-  {
     formatted_address: "Guayaquil, Ecuador",
     name: "Guayaquil",
   },
@@ -292,18 +260,6 @@ exports.cities = [
     name: "Cali",
   },
   {
-    formatted_address: "Fortaleza - State of Ceará, Brazil",
-    name: "Fortaleza",
-  },
-  {
-    formatted_address: "Curitiba, State of Paraná, Brazil",
-    name: "Curitiba",
-  },
-  {
-    formatted_address: "Valparaíso, Chile",
-    name: "Valparaíso",
-  },
-  {
     formatted_address: "Recife - State of Pernambuco, Brazil",
     name: "Recife",
   },
@@ -314,14 +270,6 @@ exports.cities = [
   {
     formatted_address: "Sucre, Bolivia",
     name: "Sucre",
-  },
-  {
-    formatted_address: "Belém - State of Pará, Brazil",
-    name: "Belém",
-  },
-  {
-    formatted_address: "Córdoba, Cordoba, Argentina",
-    name: "Córdoba",
   },
   {
     formatted_address: "New York, NY, USA",
@@ -438,10 +386,6 @@ exports.cities = [
   {
     formatted_address: "Suva, Fiji",
     name: "Suva",
-  },
-  {
-    formatted_address: "Nouméa, New Caledonia",
-    name: "Nouméa",
   },
   {
     formatted_address: "Honiara, Solomon Islands",
@@ -579,10 +523,6 @@ exports.cities = [
     formatted_address:
       "Kuala Lumpur, Federal Territory of Kuala Lumpur, Malaysia",
     name: "Kuala Lumpur",
-  },
-  {
-    formatted_address: "Hanoi, Hoàn Kiếm, Hanoi, Vietnam",
-    name: "Hanoi",
   },
   {
     formatted_address: "Manila, Metro Manila, Philippines",

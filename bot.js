@@ -1,4 +1,5 @@
 const superagent = require("superagent");
+const twitter = require("twitter");
 const path = require("path");
 const { cities } = require("./cities");
 
@@ -6,6 +7,13 @@ const ENV = process.env.NODE_ENV || "development";
 
 require("dotenv").config({
   path: path.resolve(__dirname, `./.env.${ENV}`),
+});
+
+const twitterClient = new twitter({
+  consumer_key: process.env.TWITTER_CONSUMER_KEY,
+  consumer_secret: process.env.TWITTER_CONSUMER_SECRET,
+  access_token_key: process.env.TWITTER_ACCESS_TOKEN_KEY,
+  access_token_secret: process.env.TWITTER_ACCESS_TOKEN_SECRET,
 });
 
 const city_name =
@@ -30,7 +38,12 @@ superagent
     return Promise.all(photoReqs);
   })
   .then((responses) => {
-    responses.forEach((response) => {
-      console.log(response.body);
+    responses.splice(4);
+    const uploadReqs = responses.map((photo) => {
+      return twitterClient.post("/media/upload", { media: photo.body });
     });
+    return Promise.all(uploadReqs);
+  })
+  .then((responses) => {
+    console.log(responses);
   });
