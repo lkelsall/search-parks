@@ -2,15 +2,14 @@ const superagent = require("superagent");
 const path = require("path");
 const { cities } = require("./cities");
 
-console.log(cities);
-
 const ENV = process.env.NODE_ENV || "development";
 
 require("dotenv").config({
   path: path.resolve(__dirname, `./.env.${ENV}`),
 });
 
-const city_name = "Copenhagen, Denmark";
+const city_name =
+  cities[Math.floor(Math.random() * cities.length)].formatted_address;
 
 // superagent
 //   .get(
