@@ -1,0 +1,23 @@
+{
+  "name": "search-parks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lkelsall/search-parks.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lkelsall/search-parks/issues"
+  },
+  "homepage": "https://github.com/lkelsall/search-parks#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "superagent": "^6.1.0"
+  }
+}
