@@ -40,14 +40,14 @@ function sendTweet() {
       return Promise.all([...photoReqs, response.body.result]);
     })
     .then((responses) => {
-      const cityDetails = responses.splice(responses.length - 1, 1)[0];
+      const cityDetails = responses.pop();
       const uploadReqs = responses.map((photo) => {
         return twitterClient.post("/media/upload", { media: photo.body });
       });
       return Promise.all([...uploadReqs, cityDetails]);
     })
     .then((responses) => {
-      const cityDetails = responses.splice(responses.length - 1, 1)[0];
+      const cityDetails = responses.pop();
       const media_ids = responses
         .map((response) => {
           return response.media_id_string;
@@ -66,4 +66,7 @@ function sendTweet() {
     });
 }
 
+// tweet at startup
+sendTweet();
+// ...and every 24hrs
 setInterval(sendTweet, 1000 * 60 * 60 * 24);
