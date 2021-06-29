@@ -66,7 +66,4 @@ function sendTweet() {
     });
 }
 
-// tweet at startup
-sendTweet();
-// ...and every 24hrs
-setInterval(sendTweet, 1000 * 60 * 60 * 24);
+setInterval(sendTweet, 1000 * 60 * 60 * 8);
